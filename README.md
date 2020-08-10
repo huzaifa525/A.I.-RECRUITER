@@ -50,7 +50,13 @@ candidate with the help of IBM Watson Assistant with the help of
 aptitude questions and tests prebuilt and only the ones qualifying with
 certain score can further proceed.
 
+
 ## How to use it
+In the Chatbot Preview link, First you have to type a name example "Hemant" and then start answering 
+the questions ask by chatbot..
+
+## How to install it.
+
 -   create a service on ibm cloud named watson assistant and lanch it.
 
 -   click the Skills icon .
