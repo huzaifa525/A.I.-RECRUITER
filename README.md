@@ -50,6 +50,24 @@ candidate with the help of IBM Watson Assistant with the help of
 aptitude questions and tests prebuilt and only the ones qualifying with
 certain score can further proceed.
 
+## How to use it
+-   create a service on ibm cloud named watson assistant and lanch it.
+
+-   click the Skills icon .
+
+-   Click Create skill.
+
+-   If you are given the option of more than one skill type, choose to
+    create a dialog skill.
+
+-   Click Import skill, and then click Choose JSON File, and select the
+    JSON file you want to import. 
+
+-   Click Import. 
+
+-   Specify the details for the skill:
+
+
 3.  Theoretical Analysis: -
     -----------------------
 
