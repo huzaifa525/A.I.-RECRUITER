@@ -1,0 +1,1814 @@
+{
+  "intents": [
+    {
+      "intent": "thanks",
+      "examples": [
+        {
+          "text": "Have a great day"
+        },
+        {
+          "text": "Thanks"
+        },
+        {
+          "text": "Thank you"
+        },
+        {
+          "text": "See you soon"
+        },
+        {
+          "text": "Will be back again"
+        },
+        {
+          "text": "Good bye"
+        },
+        {
+          "text": "bye"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "greetings",
+      "examples": [
+        {
+          "text": "Hey"
+        },
+        {
+          "text": "Good morning"
+        },
+        {
+          "text": "Good afternoon"
+        },
+        {
+          "text": "Good evening"
+        },
+        {
+          "text": "Hola"
+        },
+        {
+          "text": "Hi"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "thanks",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "thank you",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "question",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "q2",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "q4",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "q5",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "q3",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "round",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "r2",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "round2",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "round1",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "name",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "nidhi",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "prashant",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Disha",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "sakina",
+          "synonyms": [
+            "hameeda",
+            "nurjahan",
+            "ferdousi",
+            "zainab",
+            "khatoon",
+            "kainat",
+            "naseema",
+            "fatema",
+            "maryum",
+            "shahzadi",
+            "zaynab",
+            "zeinab",
+            "fatemeh",
+            "fatimah",
+            "fatma",
+            "busisiwe",
+            "nazma",
+            "surayya",
+            "hafiza",
+            "laboni",
+            "khadija",
+            "hafsa",
+            "khatun",
+            "asmaa",
+            "farzana",
+            "halima",
+            "zohra",
+            "aminah",
+            "siham",
+            "maryam",
+            "charelle",
+            "nosipho",
+            "nonhlanhla",
+            "kakoli",
+            "akmar",
+            "akther",
+            "motaz",
+            "esraa",
+            "raziya",
+            "mariam"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Utkarsh",
+          "synonyms": [
+            "moumita",
+            "ketki",
+            "akshat",
+            "eshwar",
+            "keshav",
+            "anirudh",
+            "nilanjan",
+            "mousumi",
+            "apoorv",
+            "amogh",
+            "saurabh",
+            "sriram",
+            "pallav",
+            "shubham",
+            "yogesh",
+            "prashant",
+            "sanjoy",
+            "girish",
+            "umesh",
+            "prashanth",
+            "gaurav",
+            "pradeep",
+            "manoj",
+            "rajesh",
+            "praveen",
+            "ashish",
+            "himanshu",
+            "vinay",
+            "nilesh",
+            "vipin"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Rutvik",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Hemant",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "huzefa",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "nand",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Stat",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "yes",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "no",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "response",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "c",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "inc",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Hey.  Thanks for being here. Before we start let me know your name"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_2_1594376517998",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1594376518015",
+      "previous_sibling": "handler_2_1594376518015"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1594376517998",
+      "context": {
+        "name": "@name"
+      },
+      "conditions": "@name",
+      "event_name": "input",
+      "dialog_node": "handler_2_1594376518015"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "hi"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1594356413619",
+      "disabled": true,
+      "conditions": "<? $question==2 ?>",
+      "dialog_node": "response_9_1594359123524",
+      "previous_sibling": "response_4_1594359093096"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "An escalator moves towards the top level at the rate of 11 ft.sec and its length is 140 feet. If a person    walks on the moving escalator at the rate of 3 feet per second towards the top level, how much time    does he take to cover the entire length.",
+            "options": [
+              {
+                "label": "14 sec",
+                "value": {
+                  "input": {
+                    "text": "incorrect"
+                  }
+                }
+              },
+              {
+                "label": "10 sec ",
+                "value": {
+                  "input": {
+                    "text": "correct"
+                  }
+                }
+              },
+              {
+                "label": "12 sec",
+                "value": {
+                  "input": {
+                    "text": "incorrect"
+                  }
+                }
+              },
+              {
+                "label": "8 sec",
+                "value": {
+                  "input": {
+                    "text": "incorrect"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1594356413619",
+      "context": {},
+      "disabled": true,
+      "conditions": "@round:r1",
+      "dialog_node": "response_4_1594359093096"
+    },
+    {
+      "type": "frame",
+      "title": "Name",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hey $name Welcome to the Virtual Interview Process. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Confirm your readiness for the interview process",
+            "options": [
+              {
+                "label": "Yes",
+                "value": {
+                  "input": {
+                    "text": "yes"
+                  }
+                }
+              },
+              {
+                "label": "No",
+                "value": {
+                  "input": {
+                    "text": "no"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "context": {},
+      "conditions": "@name || #greetings",
+      "dialog_node": "node_4_1594354236342"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Not Qualified"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "source": "https://static.vecteezy.com/system/resources/previews/000/273/966/original/hand-lettering-wish-you-all-the-best-card-of-encouragement-vector.jpg",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "This is not the end. You will apply to us in future....."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1594372408088",
+      "conditions": "$final_score<6",
+      "dialog_node": "response_8_1594372468454",
+      "previous_sibling": "response_1_1594372435981"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Qualified the test"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "source": "https://image.freepik.com/free-vector/congratulations-lettering-message-vector-greeting_7233-464.jpg",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Further Details will sent you . Welcome to our Community"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1594372408088",
+      "conditions": "$final_score>=6",
+      "dialog_node": "response_1_1594372435981"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_26_1594366762983",
+      "event_name": "focus",
+      "dialog_node": "handler_28_1594366762983",
+      "previous_sibling": "handler_27_1594366762983"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_26_1594366762983",
+      "event_name": "input",
+      "dialog_node": "handler_27_1594366762983"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "hi"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_16_1594366762983",
+      "disabled": true,
+      "conditions": "<? $question==2 ?>",
+      "dialog_node": "response_18_1594366762983",
+      "previous_sibling": "response_17_1594366762983"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "An escalator moves towards the top level at the rate of 11 ft.sec and its length is 140 feet. If a person    walks on the moving escalator at the rate of 3 feet per second towards the top level, how much time    does he take to cover the entire length.",
+            "options": [
+              {
+                "label": "14 sec",
+                "value": {
+                  "input": {
+                    "text": "incorrect"
+                  }
+                }
+              },
+              {
+                "label": "10 sec ",
+                "value": {
+                  "input": {
+                    "text": "correct"
+                  }
+                }
+              },
+              {
+                "label": "12 sec",
+                "value": {
+                  "input": {
+                    "text": "incorrect"
+                  }
+                }
+              },
+              {
+                "label": "8 sec",
+                "value": {
+                  "input": {
+                    "text": "incorrect"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_16_1594366762983",
+      "context": {},
+      "disabled": true,
+      "conditions": "@round:r1",
+      "dialog_node": "response_17_1594366762983"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Oh you missed next. No worries you have many more to go with. Your score is $score. Concentrate on next Question"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1594357033809",
+      "context": {
+        "score": "<? $score ?>",
+        "question": "<? $question+ 1 ?>"
+      },
+      "conditions": "@response:inc",
+      "dialog_node": "response_9_1594357112952",
+      "previous_sibling": "response_5_1594357055551"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hey you got the right answer. Your score is $score. Here comes a next one."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1594357033809",
+      "context": {
+        "score": "<? $score + 1 ?>",
+        "question": "<? $question + 1 ?>"
+      },
+      "conditions": "@response:c",
+      "dialog_node": "response_5_1594357055551"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1594366651618",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1594366651636",
+      "previous_sibling": "handler_8_1594366651636"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_7_1594366651618",
+      "event_name": "input",
+      "dialog_node": "handler_8_1594366651636"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Oh you missed next. No worries you have many more to go with. Your score is $score1. Concentrate on next"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_29_1594369269607",
+      "context": {
+        "q": "<? $q + 1 ?>",
+        "score1": "<? $score1 ?>"
+      },
+      "conditions": "@response:inc",
+      "dialog_node": "response_31_1594369269613",
+      "previous_sibling": "response_30_1594369269613"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hey you got the right answer. Your score is $score1. Here comes a next one."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_29_1594369269607",
+      "context": {
+        "q": "<? $q + 1 ?>",
+        "score1": "<? $score1 + 1 ?>"
+      },
+      "conditions": "@response:c",
+      "dialog_node": "response_30_1594369269613"
+    },
+    {
+      "type": "standard",
+      "parent": "node_8_1594355860942",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "$question>1 && $question<=6",
+      "dialog_node": "node_7_1594365026727",
+      "previous_sibling": "node_4_1594356413619"
+    },
+    {
+      "type": "standard",
+      "title": "Question 1",
+      "output": {
+        "generic": [
+          {
+            "title": "Question 1",
+            "options": [
+              {
+                "label": "4 years",
+                "value": {
+                  "input": {
+                    "text": "inc"
+                  }
+                }
+              },
+              {
+                "label": "1 years",
+                "value": {
+                  "input": {
+                    "text": "inc"
+                  }
+                }
+              },
+              {
+                "label": "2 years",
+                "value": {
+                  "input": {
+                    "text": "inc"
+                  }
+                }
+              },
+              {
+                "label": "3 years",
+                "value": {
+                  "input": {
+                    "text": "c"
+                  }
+                }
+              }
+            ],
+            "description": " Average age of a family of 4 members was 19 years, 4 years back. Birth of a new child kept the average age of the family same even today. How old is the child today?",
+            "response_type": "option"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1594355860942",
+      "context": {},
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1594359670213"
+      },
+      "conditions": "@round:round1",
+      "dialog_node": "node_4_1594356413619",
+      "previous_sibling": "slot_7_1594366651618"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1594355860942",
+      "dialog_node": "slot_7_1594366651618"
+    },
+    {
+      "type": "standard",
+      "title": "Question 1",
+      "output": {
+        "generic": [
+          {
+            "title": "Question 1",
+            "options": [
+              {
+                "label": "True",
+                "value": {
+                  "input": {
+                    "text": "c"
+                  }
+                }
+              },
+              {
+                "label": "False",
+                "value": {
+                  "input": {
+                    "text": "iinc"
+                  }
+                }
+              }
+            ],
+            "description": "If a logical expression is true, it will always return a logical 1 and if it’s false, it’ll always return a 0.",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_15_1594366762978",
+      "context": {},
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_32_1594369417061"
+      },
+      "conditions": "@round:round2",
+      "dialog_node": "node_16_1594366762983",
+      "previous_sibling": "slot_26_1594366762983"
+    },
+    {
+      "type": "standard",
+      "title": "Round 2",
+      "output": {},
+      "parent": "node_15_1594366762978",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "$q>1 && $q<=6 && $round2",
+      "dialog_node": "node_19_1594366762983",
+      "previous_sibling": "node_16_1594366762983"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_15_1594366762978",
+      "dialog_node": "slot_26_1594366762983"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Question 2",
+            "options": [
+              {
+                "label": "|,&,+,-",
+                "value": {
+                  "input": {
+                    "text": "inc"
+                  }
+                }
+              },
+              {
+                "label": ":,+,-,&",
+                "value": {
+                  "input": {
+                    "text": "inc"
+                  }
+                }
+              },
+              {
+                "label": "+,-,&,|",
+                "value": {
+                  "input": {
+                    "text": "c"
+                  }
+                }
+              },
+              {
+                "label": "|,:,&,.^",
+                "value": {
+                  "input": {
+                    "text": "inc"
+                  }
+                }
+              }
+            ],
+            "description": "Choose the correct hierarchy of operations.",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_19_1594366762983",
+      "conditions": "$q==2",
+      "dialog_node": "response_21_1594366762983",
+      "previous_sibling": "node_20_1594366762983"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Question 3",
+            "options": [
+              {
+                "label": ">,>=,&,|",
+                "value": {
+                  "input": {
+                    "text": "c"
+                  }
+                }
+              },
+              {
+                "label": " <.<=,|,&",
+                "value": {
+                  "input": {
+                    "text": "inc"
+                  }
+                }
+              },
+              {
+                "label": "<,>=,|,&",
+                "value": {
+                  "input": {
+                    "text": "inc"
+                  }
+                }
+              },
+              {
+                "label": "<,|,>,&",
+                "value": {
+                  "input": {
+                    "text": "inc"
+                  }
+                }
+              }
+            ],
+            "description": " The correct hierarchy of operations is ________",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_19_1594366762983",
+      "conditions": "$q==3",
+      "dialog_node": "response_22_1594366762983",
+      "previous_sibling": "response_21_1594366762983"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Question 4",
+            "options": [
+              {
+                "label": "Break statement",
+                "value": {
+                  "input": {
+                    "text": "inc"
+                  }
+                }
+              },
+              {
+                "label": " Continue statement",
+                "value": {
+                  "input": {
+                    "text": "inc"
+                  }
+                }
+              },
+              {
+                "label": "Return statement",
+                "value": {
+                  "input": {
+                    "text": "inc"
+                  }
+                }
+              },
+              {
+                "label": "No Statement",
+                "value": {
+                  "input": {
+                    "text": "c"
+                  }
+                }
+              }
+            ],
+            "description": "Before starting a new case, we have to end the previous case using ___________",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_19_1594366762983",
+      "conditions": "$q==4",
+      "dialog_node": "response_23_1594366762983",
+      "previous_sibling": "response_22_1594366762983"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Your final score of Round 2 is $score1."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_19_1594366762983",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_10_1594372345998"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "response_25_1594366762983",
+      "previous_sibling": "response_24_1594366762983"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Question 5",
+            "options": [
+              {
+                "label": "continue",
+                "value": {
+                  "input": {
+                    "text": "c"
+                  }
+                }
+              },
+              {
+                "label": "if-else",
+                "value": {
+                  "input": {
+                    "text": "inc"
+                  }
+                }
+              },
+              {
+                "label": "clc",
+                "value": {
+                  "input": {
+                    "text": "inc"
+                  }
+                }
+              },
+              {
+                "label": "plot()",
+                "value": {
+                  "input": {
+                    "text": "inc"
+                  }
+                }
+              }
+            ],
+            "description": "We cannot use a ____ statement if the if-else structure is not part of a loop.",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_19_1594366762983",
+      "conditions": "$q==5",
+      "dialog_node": "response_24_1594366762983",
+      "previous_sibling": "response_23_1594366762983"
+    },
+    {
+      "type": "standard",
+      "output": {},
+      "parent": "node_19_1594366762983",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_29_1594369269607"
+      },
+      "conditions": "true",
+      "dialog_node": "node_20_1594366762983"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "All the Best for Second Round"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1594372345998",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_33_1594375732328"
+      },
+      "conditions": "$q==6",
+      "dialog_node": "response_10_1594375248992",
+      "previous_sibling": "response_6_1594375174573"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You have completed one round with "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1594372345998",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_1_1594372732530"
+      },
+      "conditions": "$question==6",
+      "dialog_node": "response_6_1594375174573",
+      "previous_sibling": "response_2_1594375123060"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "FINAL SCORE is <? $score + $score1 ?>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1594372345998",
+      "context": {
+        "final_score": "<? $score + $score1 ?>"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_6_1594372408088"
+      },
+      "conditions": "$question==6 && $q==6",
+      "dialog_node": "response_2_1594375123060"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Question 2",
+            "options": [
+              {
+                "label": "70%",
+                "value": {
+                  "input": {
+                    "text": "c"
+                  }
+                }
+              },
+              {
+                "label": "80%",
+                "value": {
+                  "input": {
+                    "text": "inc"
+                  }
+                }
+              },
+              {
+                "label": "60%",
+                "value": {
+                  "input": {
+                    "text": "inc"
+                  }
+                }
+              },
+              {
+                "label": "90%",
+                "value": {
+                  "input": {
+                    "text": "inc"
+                  }
+                }
+              }
+            ],
+            "description": "In a class, 15% of total number of students failed in Science, 25% of total number of students failed in Maths and 10% of total number of students failed in both. How much percentage of students passed in both Maths and Science?",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_7_1594365026727",
+      "conditions": "$question==2",
+      "dialog_node": "response_1_1594365040476",
+      "previous_sibling": "node_7_1594365235339"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Question 4",
+            "options": [
+              {
+                "label": " 70 : 105 : 135 : 189",
+                "value": {
+                  "input": {
+                    "text": "c"
+                  }
+                }
+              },
+              {
+                "label": "105 : 115 : 236 :189",
+                "value": {
+                  "input": {
+                    "text": "inc"
+                  }
+                }
+              },
+              {
+                "label": "70 : 124 : 155 : 201",
+                "value": {
+                  "input": {
+                    "text": "inc"
+                  }
+                }
+              },
+              {
+                "label": "12 : 78 : 256 : 189",
+                "value": {
+                  "input": {
+                    "text": "inc"
+                  }
+                }
+              }
+            ],
+            "description": "Find A:B:C:D when A:B = 2:3 ; B:C = 7:9 ; C:D = 5:7",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_7_1594365026727",
+      "conditions": "$question==4",
+      "dialog_node": "response_10_1594365825672",
+      "previous_sibling": "response_9_1594365180581"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Your final score of Round 1 is $score."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1594365026727",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_10_1594372345998"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "response_4_1594365195750",
+      "previous_sibling": "response_1_1594365931291"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Question 5",
+            "options": [
+              {
+                "label": "67,250",
+                "value": {
+                  "input": {
+                    "text": "inc"
+                  }
+                }
+              },
+              {
+                "label": "60,500",
+                "value": {
+                  "input": {
+                    "text": "inc"
+                  }
+                }
+              },
+              {
+                "label": "66,550",
+                "value": {
+                  "input": {
+                    "text": "c"
+                  }
+                }
+              },
+              {
+                "label": "66,600",
+                "value": {
+                  "input": {
+                    "text": "inc"
+                  }
+                }
+              }
+            ],
+            "description": "The population of a city is 50,000 at present. It increases at the rate of 10% per annum. What will be its population 3 yr from now?",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_7_1594365026727",
+      "conditions": "$question==5",
+      "dialog_node": "response_1_1594365931291",
+      "previous_sibling": "response_10_1594365825672"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Question 3",
+            "options": [
+              {
+                "label": "251",
+                "value": {
+                  "input": {
+                    "text": "inc"
+                  }
+                }
+              },
+              {
+                "label": "221",
+                "value": {
+                  "input": {
+                    "text": "c"
+                  }
+                }
+              },
+              {
+                "label": "181",
+                "value": {
+                  "input": {
+                    "text": "inc"
+                  }
+                }
+              },
+              {
+                "label": "175",
+                "value": {
+                  "input": {
+                    "text": "inc"
+                  }
+                }
+              }
+            ],
+            "description": "What is 4th proportional in 9, 13 and 153?",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_7_1594365026727",
+      "conditions": "$question==3",
+      "dialog_node": "response_9_1594365180581",
+      "previous_sibling": "response_1_1594365040476"
+    },
+    {
+      "type": "standard",
+      "parent": "node_7_1594365026727",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_1_1594357033809"
+      },
+      "conditions": "true",
+      "dialog_node": "node_7_1594365235339"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1594354236342",
+      "variable": "$name",
+      "dialog_node": "slot_2_1594376517998"
+    },
+    {
+      "type": "standard",
+      "title": "Ready",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ""
+              },
+              {
+                "text": "Let me explain the rules of this interview"
+              },
+              {
+                "text": "We have 2 Rounds For interview"
+              },
+              {
+                "text": "ROUND - 1: Aptitude Round\nROUND - 2: Technical Knowledge Round"
+              },
+              {
+                "text": "You can can choose which to take up first "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Select the Round you want to take up first",
+            "options": [
+              {
+                "label": "Round 1 - Aptitude Round",
+                "value": {
+                  "input": {
+                    "text": "round1"
+                  }
+                }
+              },
+              {
+                "label": "Round 2 - Technical Knowledge Round",
+                "value": {
+                  "input": {
+                    "text": "round2"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "@Stat:yes",
+      "dialog_node": "node_2_1594354919119",
+      "previous_sibling": "node_2_1594355541660"
+    },
+    {
+      "type": "standard",
+      "title": "Round 1 Response",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_7_1594365026727"
+      },
+      "conditions": "true && $question<=6",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1594357033809",
+      "previous_sibling": "node_32_1594369417061"
+    },
+    {
+      "type": "standard",
+      "title": " Round 1 ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " here comes your first question. All the Best!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "round1": "@round"
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "@round:round1",
+      "dialog_node": "node_8_1594355860942",
+      "previous_sibling": "node_2_1594354919119"
+    },
+    {
+      "type": "standard",
+      "title": "Not Ready",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I can understand. Will catch later once you are comfortable. Have a great day $name."
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "values": [
+              {
+                "text": "Thanks for being a part. Hope to see you soon"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@Stat:no",
+      "dialog_node": "node_2_1594355541660",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Round 1 completed",
+      "output": {
+        "deleted": "<?context.remove('round1')?>",
+        "generic": [
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Round 2 - Technical Test",
+                "value": {
+                  "input": {
+                    "text": "round2"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "context": {
+        "question": 6
+      },
+      "conditions": "$question==6",
+      "dialog_node": "node_1_1594372732530",
+      "previous_sibling": "node_6_1594372408088"
+    },
+    {
+      "type": "standard",
+      "title": "Round 2 Completed",
+      "output": {
+        "deleted": "<?context.remove('round2')?>",
+        "generic": [
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Round 1 - Aptitude Test",
+                "value": {
+                  "input": {
+                    "text": "round1"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "context": {
+        "q": 6
+      },
+      "conditions": "$q==6",
+      "dialog_node": "node_33_1594375732328",
+      "previous_sibling": "node_1_1594372732530"
+    },
+    {
+      "type": "standard",
+      "title": "Round 2 Response",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_19_1594366762983"
+      },
+      "conditions": "true && $q<=5 && $round2",
+      "dialog_node": "node_29_1594369269607",
+      "previous_sibling": "node_1_1594357033809"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_9_1594376877303",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Score Round 2",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "q": 1,
+        "score1": 0
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_29_1594369269607"
+      },
+      "conditions": "true && $round2",
+      "dialog_node": "node_32_1594369417061",
+      "previous_sibling": "node_4_1594359670213"
+    },
+    {
+      "type": "standard",
+      "title": "Check rounds attempted",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "true",
+      "dialog_node": "node_10_1594372345998",
+      "previous_sibling": "node_29_1594369269607"
+    },
+    {
+      "type": "standard",
+      "title": "Round 2",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Keep Tight and  concentrate, here comes your first question. All the Best!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "round2": "@round"
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "@round:round2",
+      "dialog_node": "node_15_1594366762978",
+      "previous_sibling": "node_8_1594355860942"
+    },
+    {
+      "type": "standard",
+      "title": "Thank you ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Pleasure to see you here."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#thanks || @thanks:(thank you)",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_9_1594376877303",
+      "previous_sibling": "node_33_1594375732328"
+    },
+    {
+      "type": "standard",
+      "title": "score Round 1",
+      "context": {
+        "score": 0,
+        "question": 1
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_1_1594357033809"
+      },
+      "conditions": "$round1 && true",
+      "dialog_node": "node_4_1594359670213",
+      "previous_sibling": "node_15_1594366762978"
+    },
+    {
+      "type": "standard",
+      "title": "Final Score",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "true",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_6_1594372408088",
+      "previous_sibling": "node_10_1594372345998"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hey , We are from ABC company . To apply for Your Dedicated Job you selected , First you have to clear our skills Test ."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": " Enter your name to proceed..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [
+    {
+      "text": "ready"
+    }
+  ],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Recruitment main project",
+  "language": "en",
+  "description": "It is only for project ..."
+}
